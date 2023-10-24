@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="es" languagename="Español" countrycode="es">
+<import>
+	<category name="blog.acp.menu">
+		<item name="blog.acp.menu.link.blog"><![CDATA[Blog]]></item>
+		<item name="blog.acp.menu.link.blog.category.list"><![CDATA[Categorías]]></item>
+		<item name="blog.acp.menu.link.blog.category.add"><![CDATA[Añadir categoría]]></item>
+	</category>
+	<category name="blog.blog">
+		<item name="blog.blog.moreBlogs"><![CDATA[Más blogs]]></item>
+		<item name="blog.blog.button.add"><![CDATA[Crear blog]]></item>
+		<item name="blog.blog.add"><![CDATA[Crear blog]]></item>
+		<item name="blog.blog.edit"><![CDATA[Editar blog]]></item>
+		<item name="blog.blog.list"><![CDATA[Blogs]]></item>
+		<item name="blog.blog.accessLevel"><![CDATA[Puede ver el blog]]></item>
+		<item name="blog.blog.accessLevel.description"><![CDATA[Este blog y sus contenidos deben ser accesibles sólo para los usuarios seleccionados.]]></item>
+		<item name="blog.blog.accessLevel.everyone"><![CDATA[Todos]]></item>
+		<item name="blog.blog.accessLevel.registered"><![CDATA[Usuarios registrados]]></item>
+		<item name="blog.blog.accessLevel.following"><![CDATA[Usuarios seguidos]]></item>
+		<item name="blog.blog.accessLevel.owner"><![CDATA[Sólo yo]]></item>
+		<item name="blog.blog.description.description"><![CDATA[Introduce una breve descripción de tu blog, no debe superar los 500 caracteres.]]></item>
+		<item name="blog.blog.description.error.tooLong"><![CDATA[La descripción es demasiado larga, debe tener menos de 500 caracteres.]]></item>
+		<item name="blog.blog.authors"><![CDATA[Autores adicionales]]></item>
+		<item name="blog.blog.authors.description"><![CDATA[Opcional: Puedes añadir usuarios adicionales que pueden crear nuevos artículos y editar los existentes. Separa múltiples usuarios con una coma.]]></item>
+		<item name="blog.blog.subscribers"><![CDATA[Suscriptores]]></item>
+		<item name="blog.blog.subscribers.label"><![CDATA[{plural value=$blog->subscribers one='# suscriptor' other='# suscriptores'}]]></item>
+		<item name="blog.blog.delete"><![CDATA[Eliminar]]></item>
+		<item name="blog.blog.delete.confirmMessage"><![CDATA[¿Realmente quieres eliminar este blog?]]></item>
+		<item name="blog.blog.authors.error.notFound"><![CDATA[El nombre de usuario “{$errorData[username]}” no existe.]]></item>
+		<item name="blog.blog.lastUpdateTime"><![CDATA[Última actualización]]></item>
+		<item name="blog.blog.button.sort"><![CDATA[Ordenar]]></item>
+		<item name="blog.blog.otherAuthor.entries"><![CDATA[{plural value=$otherAuthor->entries one='# artículo' other='# artículos'}]]></item>
+		<item name="blog.blog.archive"><![CDATA[Archivo]]></item>
+		<item name="blog.blog.searchBlog"><![CDATA[Buscar en el blog]]></item>
+		<item name="blog.blog.searchAllBlogs"><![CDATA[Buscar en todos los blogs]]></item>
+		<item name="blog.blog.showAll"><![CDATA[Mostrar todos los blogs]]></item>
+		<item name="blog.blog.lastEntry"><![CDATA[Último artículo]]></item>
+		<item name="blog.blog.boxList.description.cumulativeLikes"/>
+		<item name="blog.blog.boxList.description.lastUpdateTime"><![CDATA[{user object=$boxBlog->getUserProfile()} <span class="separatorLeft">{@$boxBlog->lastUpdateTime|time}</span>]]></item>
+		<item name="blog.blog.sortField.title"><![CDATA[Título]]></item>
+		<item name="blog.blog.sortField.lastUpdateTime"><![CDATA[Última actualización]]></item>
+		<item name="blog.blog.sortField.entries"><![CDATA[Artículos]]></item>
+		<item name="blog.blog.sortField.subscribers"><![CDATA[Suscriptores]]></item>
+		<item name="blog.blog.sortField.views"><![CDATA[Visitas]]></item>
+		<item name="blog.blog.sortField.cumulativeLikes"><![CDATA[Reacciones]]></item>
+		<item name="blog.blog.condition.cumulativeLikes"><![CDATA[Reacciones]]></item>
+		<item name="blog.blog.about"><![CDATA[Acerca del blog]]></item>
+	</category>
+	<category name="blog.category">
+		<item name="blog.category.delete.sure"><![CDATA[¿Realmentes quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los artículos que sólo estén en esta categoría serán eliminados.]]></item>
+	</category>
+	<category name="blog.entry">
+		<item name="blog.entry.blog"><![CDATA[Blog]]></item>
+		<item name="blog.entry.add"><![CDATA[Crear artículo del blog]]></item>
+		<item name="blog.entry.button.add"><![CDATA[Crear artículo]]></item>
+		<item name="blog.entry.categorizedEntries"><![CDATA[Artículos del blog en la categoría “{$category->getTitle()}”]]></item>
+		<item name="blog.entry.comment"><![CDATA[Comentario de artículo del blog]]></item>
+		<item name="blog.entry.comment.like.notification.title"><![CDATA[Reacción a comentario (Artículo del blog)]]></item>
+		<item name="blog.entry.comment.like.notification.title.stacked"><![CDATA[{#$count} usuarios han reaccionado a tu comentario (Artículo del blog)]]></item>
+		<item name="blog.entry.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado a tu comentario en el artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} ha reaccionado a tu comentario en el artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.comment.notification.mail.plaintext"><![CDATA[{@$authorList} ha comentado en tu artículo del blog “{@$entry->getTitle()}” [URL:{@$entry->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="blog.entry.comment.notification.mail.html"><![CDATA[<p>{@$authorList} ha comentado en tu artículo del blog <a href="{$entry->getLink()}#comment{@$commentID}">{$entry->getTitle()}</a>:</p>]]></item>
+		<item name="blog.entry.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un invitado{/if} ha comentado en tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.comment.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} ha comentado en tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.comments"><![CDATA[Comentarios]]></item>
+		<item name="blog.entry.comments.count"><![CDATA[{plural value=$entry->comments one='# comentario' other='# comentarios'}]]></item>
+		<item name="blog.entry.commentResponse"><![CDATA[Respuesta a comentario del artículo del blog]]></item>
+		<item name="blog.entry.commentResponse.like.notification.title"><![CDATA[Reacción a tu respuesta a un comentario (Artículo del blog)]]></item>
+		<item name="blog.entry.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} usuarios han reaccionado a tu respuesta a un comentario (Artículo del blog)]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado a tu respuesta a un comentario en el artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} ha reaccionado a tu respuesta a un comentario en el artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} ha respondido a tu comentario en el artículo del blog “{@$entry->getTitle()}” [URL:{@$entry->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="blog.entry.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} ha respondido a tu comentario en el artículo del blog <a href="{$entry->getLink()}#comment{@$commentID}/response{@$responseID}">{$entry->getTitle()}</a>:</p>]]></item>
+		<item name="blog.entry.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un invitado{/if} ha respondido a tu comentario en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.commentResponse.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} ha respondido a tu comentario en el artículo <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.mail.plaintext"><![CDATA[{@$authorList} ha respondido al comentario de {@$commentAuthor} en tu artículo del blog “{@$entry->getTitle()}” [URL:{@$entry->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.mail.html"><![CDATA[<p>{@$authorList} ha respondido al comentario de <strong>{$commentAuthor}</strong> en tu artículo del blog <a href="{$entry->getLink()}#comment{@$commentID}/response{@$responseID}">{$entry->getTitle()}</a>:</p>]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un invitado{/if} ha respondido al comentario de <strong>{$commentAuthor->username}</strong> en tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} ha respondido al comentario de <strong>{$author->username}</strong> en tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.delayedPublication"><![CDATA[El artículo se publicará el {@$entry->publicationDate|plainTime}.]]></item>
+		<item name="blog.entry.delete.success"><![CDATA[El artículo ha sido eliminado.]]></item>
+		<item name="blog.entry.delete"><![CDATA[Eliminar]]></item>
+		<item name="blog.entry.delete.confirmMessage"><![CDATA[¿Realmente quieres eliminar este artículo?]]></item>
+		<item name="blog.entry.disable"><![CDATA[Desactivar]]></item>
+		<item name="blog.entry.enable"><![CDATA[Aprobar]]></item>
+		<item name="blog.entry.restore"><![CDATA[Restaurar]]></item>
+		<item name="blog.entry.trash"><![CDATA[Mover a la papelera]]></item>
+		<item name="blog.entry.trash.confirmMessage"><![CDATA[¿Realmente quieres mover este artículo a la papelera?]]></item>
+		<item name="blog.entry.trash.reason"><![CDATA[Motivo (opcional)]]></item>
+		<item name="blog.entry.edit"><![CDATA[Editar artículo del blog]]></item>
+		<item name="blog.entry.enableComments"><![CDATA[Habilitar comentarios]]></item>
+		<item name="blog.entry.enableComments.description"><![CDATA[Permite a los usuarios comentar en este artículo.]]></item>
+		<item name="blog.entry.enableDelayedPublication"><![CDATA[Publicación aplazada]]></item>
+		<item name="blog.entry.entries"><![CDATA[Artículos del blog]]></item>
+		<item name="blog.entry.entries.label"><![CDATA[{plural value=$blog->entries one='# artículo' other='# artículos'}]]></item>
+		<item name="blog.entry.information"><![CDATA[Información]]></item>
+		<item name="blog.entry.like.notification.title"><![CDATA[Reacción a tu artículo del blog]]></item>
+		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} usuarios han reaccionado a tu artículo del blog]]></item>
+		<item name="blog.entry.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado a tu artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} han reaccionado a tu artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.moderation.info"><![CDATA[Los artículos recién creados permanecerán inaccesibles hasta que sean aprobados por un moderador.]]></item>
+		<item name="blog.entry.moderation.redirect"><![CDATA[Tu artículo ha sido creado y se mostrará una vez sea aprobado.]]></item>
+		<item name="blog.entry.moreEntries"><![CDATA[Más artículos]]></item>
+		<item name="blog.entry.noEntries"><![CDATA[No hay artículos en el blog en este momento.]]></item>
+		<item name="blog.entry.notification.mail.plaintext"><![CDATA[{@$author} ha escrito el artículo del blog “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
+		<item name="blog.entry.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> ha escrito el artículo del blog <a href="{$entry->getLink()}">{$entry->getTitle()}</a>:</p>]]></item>
+		<item name="blog.entry.notification.message"><![CDATA[<strong>{$author}</strong> ha escrito el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.notification.title"><![CDATA[Nuevo artículo del blog]]></item>
+		<item name="blog.entry.publication"><![CDATA[Publicación]]></item>
+		<item name="blog.entry.publicationDate"><![CDATA[Fecha de publicación]]></item>
+		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[La fecha de publicación no es válida.]]></item>
+		<item name="blog.entry.recentActivity.entry"><![CDATA[Ha escrito el artículo del blog {anchor object=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.recentActivity.entryComment"><![CDATA[Ha comentado en el artículo del blog {anchor link=$comment content=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[Ha respondido a un comentario de {user object=$commentAuthor} en el artículo del blog {anchor link=$response content=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[Ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> al artículo del blog {anchor object=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.userEntries"><![CDATA[Artículos del blog de {$user->username}]]></item>
+		<item name="blog.entry.views"><![CDATA[Visitas]]></item>
+		<item name="blog.entry.views.count"><![CDATA[{plural value=$entry->views one='# lectura' other='# lecturas'}]]></item>
+		<item name="blog.entry.watchedEntries"><![CDATA[Artículos del blog suscritos]]></item>
+		<item name="blog.entry.categories"><![CDATA[Categorías]]></item>
+		<item name="blog.entry.message"><![CDATA[Mensaje]]></item>
+		<item name="blog.entry.unreadEntries"><![CDATA[Artículos del blog no leídos]]></item>
+		<item name="blog.entry.log.trash.summary"><![CDATA[La entrada ha sido eliminada por {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} por el siguiente motivo: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
+		<item name="blog.entry.hasOldVersions"><![CDATA[Esta entrada del blog tiene versiones anteriores guardadas.]]></item>
+		<item name="blog.entry.editReason"><![CDATA[Motivo de edición (opcional)]]></item>
+		<item name="blog.entry.draft"><![CDATA[Borrador]]></item>
+		<item name="blog.entry.button.saveAsDraft"><![CDATA[Guardar borrador]]></item>
+		<item name="blog.entry.button.publish"><![CDATA[Publicar]]></item>
+		<item name="blog.entry.setAsFeatured"><![CDATA[Marcar como destacado]]></item>
+		<item name="blog.entry.unsetAsFeatured"><![CDATA[Eliminar marca de destacado]]></item>
+		<item name="blog.entry.featured"><![CDATA[Destacado]]></item>
+		<item name="blog.entry.mention.notification.title"><![CDATA[Has sido mencionado]]></item>
+		<item name="blog.entry.mention.notification.message"><![CDATA[<strong>{$author}</strong> te ha mencionado en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.mention.notification.mail.plaintext"><![CDATA[{@$author} te ha mencionado en el artículo del blog “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
+		<item name="blog.entry.mention.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> te ha mencionado en el artículo del blog <a href="{$entry->getLink()}">{$entry->getTitle()}</a>:</p>]]></item>
+		<item name="blog.entry.categories.error.tooMany"><![CDATA[Has seleccionado demasiadas categorías. Puedes seleccionar hasta {@BLOG_ENTRY_MAX_CATEGORIES} {if BLOG_ENTRY_MAX_CATEGORIES == 1}categoría{else}categorías{/if}.]]></item>
+		<item name="blog.entry.date"><![CDATA[Fecha]]></item>
+		<item name="blog.entry.date.error.invalid"><![CDATA[La fecha establecida no es válida, la fecha no puede ser en el futuro.]]></item>
+		<item name="blog.entry.label.readMore"><![CDATA[Insertar [readmore]]]></item>
+		<item name="blog.entry.previousEntry"><![CDATA[Artículo anterior]]></item>
+		<item name="blog.entry.nextEntry"><![CDATA[Siguiente artículo]]></item>
+		<item name="blog.entry.boxList.description.comments"><![CDATA[{plural value=$boxEntry->comments one='# comentario' other='# comentarios'}]]></item>
+		<item name="blog.entry.boxList.description.time"><![CDATA[{user object=$boxEntry->getUserProfile()} <span class="separatorLeft">{@$boxEntry->time|time}</span>]]></item>
+		<item name="blog.entry.sortField.subject"><![CDATA[Título]]></item>
+		<item name="blog.entry.sortField.time"><![CDATA[Fecha]]></item>
+		<item name="blog.entry.sortField.comments"><![CDATA[Comentarios]]></item>
+		<item name="blog.entry.sortField.views"><![CDATA[Visitas]]></item>
+		<item name="blog.entry.sortField.cumulativeLikes"><![CDATA[Reacciones]]></item>
+		<item name="blog.entry.condition.blog"><![CDATA[Blog]]></item>
+		<item name="blog.entry.condition.timeFrame"><![CDATA[Edad]]></item>
+		<item name="blog.entry.condition.timeFrame.description"><![CDATA[Esta opción establece la edad mínima y máxima en días de los artículos que aparecen en la caja.]]></item>
+		<item name="blog.entry.condition.comments"><![CDATA[Comentarios]]></item>
+		<item name="blog.entry.condition.isFeatured"><![CDATA[Sólo artículos destacados]]></item>
+		<item name="blog.entry.bbcode.type"><![CDATA[Artículo del blog]]></item>
+	</category>
+	<category name="blog.index">
+		<item name="blog.index.stats"><![CDATA[Estadísticas]]></item>
+		<item name="blog.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
+<li>{plural value=$stats[authors] one='# autor' other='# autores'}</li>
+<li>{plural value=$stats[entries] one='# artículo' other='# artículos'} ({plural value=$stats[entriesPerDay] one='# artículo' other='# artículos'} por día)</li>
+<li>{plural value=$stats[comments] one='# comentario' other='# comentarios'}</li>
+</ul>]]></item>
+	</category>
+	<category name="wcf.acl.option">
+		<item name="wcf.acl.option.com.woltlab.blog.category.canViewCategory"><![CDATA[Puede ver la categoría]]></item>
+		<item name="wcf.acl.option.com.woltlab.blog.category.canUseCategory"><![CDATA[Puede crear artículos]]></item>
+	</category>
+	<category name="wcf.acp.ad">
+		<item name="wcf.acp.ad.location.category.com.woltlab.blog.entry"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.ad.location.com.woltlab.blog.entry.inEntryMessage"><![CDATA[En el mensaje de la entrada]]></item>
+	</category>
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.tagCloud"><![CDATA[Tags del blog]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.categories"><![CDATA[Categorías del blog]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.blogList"><![CDATA[Blogs]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.entryList"><![CDATA[Artículos del blog]]></item>
+		<item name="wcf.acp.box.boxController.com.woltlab.blog.commentList"><![CDATA[Comentarios del blog]]></item>
+	</category>
+	<category name="wcf.acp.content">
+		<item name="wcf.acp.content.provider.com.woltlab.blog.entry"><![CDATA[Artículos del blog]]></item>
+		<item name="wcf.acp.content.provider.com.woltlab.blog.blog"><![CDATA[Blogs]]></item>
+	</category>
+	<category name="wcf.acp.dataImport">
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.blog"><![CDATA[Blogs]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry"><![CDATA[Artículos del blog]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.category"><![CDATA[Categorías del blog]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.attachment"><![CDATA[Archivos adjuntos del blog]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment"><![CDATA[Comentarios del blog]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment.response"><![CDATA[Respuestas a comentarios del blog]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.like"><![CDATA[Me gusta del blog]]></item>
+	</category>
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.group.option.category.mod.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.group.option.category.admin.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.canReadEntry"><![CDATA[Puede leer artículos del blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.canCreateEntry"><![CDATA[Puede crear artículos del blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.canCreateEntryWithoutModeration"><![CDATA[Puede crear artículos del blog sin aprobación]]></item>
+		<item name="wcf.acp.group.option.user.blog.canEditEntry"><![CDATA[Puede editar sus artículos del blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDeleteEntry"><![CDATA[Puede mover sus artículos del blog a la papelera]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDisableCommentFunction"><![CDATA[Puede desactivar los comentarios en los artículos de su blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDownloadAttachment"><![CDATA[Puede descargar archivos adjuntos]]></item>
+		<item name="wcf.acp.group.option.user.blog.canViewAttachmentPreview"><![CDATA[Puede ver la vista previa de archivos adjuntos]]></item>
+		<item name="wcf.acp.group.option.user.blog.canUploadAttachment"><![CDATA[Puede subir archivos adjuntos]]></item>
+		<item name="wcf.acp.group.option.user.blog.canStartPoll"><![CDATA[Puede crear encuestas]]></item>
+		<item name="wcf.acp.group.option.user.blog.canStartPublicPoll"><![CDATA[Puede crear encuestas públicas]]></item>
+		<item name="wcf.acp.group.option.user.blog.canVotePoll"><![CDATA[Puede participar en encuestas]]></item>
+		<item name="wcf.acp.group.option.user.blog.canAddComment"><![CDATA[Puede crear comentarios]]></item>
+		<item name="wcf.acp.group.option.user.blog.canAddCommentWithoutModeration"><![CDATA[Puede crear comentarios sin aprobación]]></item>
+		<item name="wcf.acp.group.option.user.blog.canEditComment"><![CDATA[Puede editar sus comentarios]]></item>
+		<item name="wcf.acp.group.option.user.blog.canDeleteComment"><![CDATA[Puede eliminar sus comentarios]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canEditEntry"><![CDATA[Puede editar artículos del blog]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canDeleteEntry"><![CDATA[Puede mover artículos del blog a la papelera]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canRestoreEntry"><![CDATA[Puede restaurar artículos del blog]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canDeleteEntryCompletely"><![CDATA[Puede eliminar artículos del blog]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canModerateEntry"><![CDATA[Puede moderar artículos del blog]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canViewDeletedEntry"><![CDATA[Puede ver artículos del blog eliminados]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canEditComment"><![CDATA[Puede editar comentarios]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canDeleteComment"><![CDATA[Puede eliminar comentarios]]></item>
+		<item name="wcf.acp.group.option.mod.blog.canModerateComment"><![CDATA[Puede moderar comentarios]]></item>
+		<item name="wcf.acp.group.option.admin.blog.canManageCategory"><![CDATA[Puede gestionar categorías]]></item>
+		<item name="wcf.acp.group.option.user.blog.maxEntryLength"><![CDATA[Longitud máxima de los artículos del blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.canEditEntryDate"><![CDATA[Puede editar la fecha de publicación de artículos del blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.canRestrictBlogAccess"><![CDATA[Puede restringir el acceso al blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.maxBlogs"><![CDATA[Blogs máximos]]></item>
+		<item name="wcf.acp.group.option.user.blog.maxBlogs.description"><![CDATA[El número máximo de blogs permitidos por usuario.]]></item>
+		<item name="wcf.acp.group.option.user.blog.editTimeout"><![CDATA[Período de edición de artículos del blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.editTimeout.description"><![CDATA[Minutos permitidos para que los usuarios editen los artículos de su blog. Establece -1 para infinito.]]></item>
+		<item name="wcf.acp.group.option.user.blog.canSetTags"><![CDATA[Puede asignar tags a artículos de blog]]></item>
+		<item name="wcf.acp.group.option.user.blog.coverPhoto.maxSize"><![CDATA[Tamaño máximo del archivo de la foto de portada]]></item>
+		<item name="wcf.acp.group.canBeAddedAsBlogAuthor"><![CDATA[Grupos de usuarios pueden añadirse como autores en los blogs]]></item>
+	</category>
+	<category name="wcf.acp.modificationLog">
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.delete"><![CDATA[Artículo del blog eliminado]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.disable"><![CDATA[Artículo del blog desactivado]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.edit"><![CDATA[Artículo del blog editado]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.enable"><![CDATA[Artículo del blog aprobado]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.restore"><![CDATA[Artículo del blog restaurado]]></item>
+		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.trash"><![CDATA[Artículo del blog movido a la papelera]]></item>
+	</category>
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.acp.option.category.blog.index"><![CDATA[Índice del blog]]></item>
+		<item name="wcf.acp.option.category.blog.entry"><![CDATA[Artículo del blog]]></item>
+		<item name="wcf.acp.option.blog_index_enable_stats"><![CDATA[Mostrar estadísticas del blog]]></item>
+		<item name="wcf.acp.option.blog_entries_per_page"><![CDATA[Artículos del blog por página]]></item>
+		<item name="wcf.acp.option.blog_excerpt_length"><![CDATA[Longitud del extracto]]></item>
+		<item name="wcf.acp.option.blog_message_sidebar_enable_user_entries"><![CDATA[Mostrar el recuento de artículos del blog del autor]]></item>
+		<item name="wcf.acp.option.blog_entry_max_categories"><![CDATA[Máximo de categorías por artículo]]></item>
+		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
+		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[Los artículos del blog se eliminan de la papelera en los días siguientes. Establece 0 para desactivar.]]></item>
+		<item name="wcf.acp.option.blog_entry_default_sort_order"><![CDATA[Orden de clasificación]]></item>
+		<item name="wcf.acp.option.blog_entry_default_sort_order.description"><![CDATA[Elije el orden predeterminado de los artículos del blog.]]></item>
+	</category>
+	<category name="wcf.acp.pip">
+		<item name="wcf.acp.pip.objectType.com.woltlab.blog.box.blogList.condition.data.title"><![CDATA[Blog List Box Condition Data]]></item>
+		<item name="wcf.acp.pip.objectType.com.woltlab.blog.box.entryList.condition.data.title"><![CDATA[Blog Article List Box Condition Data]]></item>
+		<item name="wcf.acp.pip.objectType.definitionName.com.woltlab.blog.box.blogList.condition.description"><![CDATA[This object type definition is used to register available conditions/settings for boxes listing blogs to determine which blogs are shown in the box.]]></item>
+		<item name="wcf.acp.pip.objectType.definitionName.com.woltlab.blog.box.entryList.condition.description"><![CDATA[This object type definition is used to register available conditions/settings for boxes listing blog articles to determine which articles are shown in the box.]]></item>
+	</category>
+	<category name="wcf.acp.rebuildData">
+		<item name="wcf.acp.rebuildData.blog_system_worker_BlogEntryRebuildDataWorker"><![CDATA[Reconstruir artículos del blog]]></item>
+		<item name="wcf.acp.rebuildData.blog_system_worker_BlogEntryRebuildDataWorker.description"><![CDATA[Reconstruye el índice de búsqueda de artículos del blog y recalcula los puntos de actividad.]]></item>
+		<item name="wcf.acp.rebuildData.blog_system_worker_BlogRebuildDataWorker"><![CDATA[Reconstruir blogs]]></item>
+		<item name="wcf.acp.rebuildData.blog_system_worker_BlogRebuildDataWorker.description"><![CDATA[Reconstruye las estadísticas del blog.]]></item>
+	</category>
+	<category name="wcf.acp.sitemap">
+		<item name="wcf.acp.sitemap.objectType.com.woltlab.blog.sitemap.object.blog"><![CDATA[Blogs]]></item>
+		<item name="wcf.acp.sitemap.objectType.com.woltlab.blog.sitemap.object.entry"><![CDATA[Artículos del blog]]></item>
+		<item name="wcf.acp.sitemap.objectType.com.woltlab.blog.sitemap.object.category"><![CDATA[Categorías del blog]]></item>
+	</category>
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.category.com.woltlab.blog"><![CDATA[WoltLab Suite Blog]]></item>
+		<item name="wcf.acp.stat.com.woltlab.blog.entry"><![CDATA[Artículos del blog]]></item>
+		<item name="wcf.acp.stat.com.woltlab.blog.entryComment"><![CDATA[Comentarios de artículos del blog]]></item>
+	</category>
+	<category name="wcf.like">
+		<item name="wcf.like.objectType.com.woltlab.blog.likeableEntry"><![CDATA[Artículo del blog]]></item>
+		<item name="wcf.like.title.com.woltlab.blog.entryComment"><![CDATA[Ha reaccionado con {@$reaction->render()} al comentario de {if $commentAuthor}{user object=$commentAuthor}{else}un invitado{/if} en el artículo del blog {anchor link=$comment content=$entry}.]]></item>
+		<item name="wcf.like.title.com.woltlab.blog.entryComment.response"><![CDATA[Ha reaccionado con {@$reaction->render()} a la respuesta de {if $responseAuthor}{user object=$responseAuthor}{else}un invitado{/if} al comentario de {if $commentAuthor}{user object=$commentAuthor}{else}un invitado{/if} en el artículo del blog {anchor link=$response content=$entry}.]]></item>
+		<item name="wcf.like.title.com.woltlab.blog.likeableEntry"><![CDATA[Ha reaccionado con {@$reaction->render()} al artículo del blog {anchor object=$entry class='blogEntryLink'}.]]></item>
+	</category>
+	<category name="wcf.moderation">
+		<item name="wcf.moderation.type.com.woltlab.blog.entry"><![CDATA[Artículo del blog]]></item>
+		<item name="wcf.moderation.deletedContent.com.woltlab.blog.entry"><![CDATA[Artículos del blog eliminados]]></item>
+		<item name="wcf.moderation.deletedContent.objectType.com.woltlab.blog.entry"><![CDATA[Artículos del blog]]></item>
+	</category>
+	<category name="wcf.page">
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.Entry"><![CDATA[Artículo del blog {anchor object=$entry class='blogEntryLink'}]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.EntryEdit"><![CDATA[Editar artículo del blog {anchor object=$entry class='blogEntryLink'}]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.CategoryEntryList"><![CDATA[Artículos del blog en la categoría {anchor object=$category}]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.UserEntryList"><![CDATA[<a href="{link controller='UserEntryList' application='blog' object=$user}{/link}">Artículos del blog de {$user->username}</a>]]></item>
+		<item name="wcf.page.onlineLocation.com.woltlab.blog.BlogEntryList"><![CDATA[Artículos en el blog {anchor object=$blog}]]></item>
+		<item name="wcf.page.pageObjectID.com.woltlab.blog.BlogEntryList"><![CDATA[ID del blog]]></item>
+		<item name="wcf.page.pageObjectID.com.woltlab.blog.CategoryEntryList"><![CDATA[ID de la categoría]]></item>
+		<item name="wcf.page.pageObjectID.com.woltlab.blog.Entry"><![CDATA[ID del artículo]]></item>
+		<item name="wcf.page.pageObjectID.com.woltlab.blog.UserEntryList"><![CDATA[ID del usuario]]></item>
+		<item name="wcf.page.pageObjectID.search.com.woltlab.blog.BlogEntryList"><![CDATA[Buscar títulos de blogs]]></item>
+		<item name="wcf.page.pageObjectID.search.com.woltlab.blog.CategoryEntryList"><![CDATA[Buscar títulos de categorías]]></item>
+		<item name="wcf.page.pageObjectID.search.com.woltlab.blog.Entry"><![CDATA[Buscar títulos de artículos]]></item>
+		<item name="wcf.page.pageObjectID.search.com.woltlab.blog.UserEntryList"><![CDATA[Buscar nombres de usuario]]></item>
+	</category>
+	<category name="wcf.search">
+		<item name="wcf.search.type.com.woltlab.blog.entry"><![CDATA[Artículos del blog]]></item>
+		<item name="wcf.search.object.com.woltlab.blog.entry"><![CDATA[Artículo del blog]]></item>
+	</category>
+	<category name="wcf.tagging">
+		<item name="wcf.tagging.combinedTaggedObjects.com.woltlab.blog.entry"><![CDATA[Artículos del blog etiquetados con]]></item>
+		<item name="wcf.tagging.objectType.com.woltlab.blog.entry"><![CDATA[Artículos del blog]]></item>
+		<item name="wcf.tagging.taggedObjects.com.woltlab.blog.entry"><![CDATA[Artículos del blog etiquetados con “{$tag->name}”]]></item>
+	</category>
+	<category name="wcf.user">
+		<item name="wcf.user.activityPoint.objectType.com.woltlab.blog.activityPointEvent.entry"><![CDATA[Artículos del blog]]></item>
+		<item name="wcf.user.boxList.description.blogEntries"><![CDATA[{plural value=$boxUser->blogEntries one='# artículo del blog' other='# artículos del blog'}]]></item>
+		<item name="wcf.user.sortField.blogEntries"><![CDATA[Artículos del blog]]></item>
+	</category>
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.blogEntries"><![CDATA[Artículos del blog]]></item>
+		<item name="wcf.user.condition.blogs"><![CDATA[Blogs]]></item>
+	</category>
+	<category name="wcf.user.notification">
+		<item name="wcf.user.notification.com.woltlab.blog"><![CDATA[Blog]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.notification.comment"><![CDATA[Notificarme nuevos comentarios en los artículos de mi blog]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponse"><![CDATA[Notificarme nuevas respuestas a mis comentarios]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponseOwner"><![CDATA[Notificarme nuevas respuestas a comentarios en artículos de mi blog]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entry.entry"><![CDATA[Notificarme nuevos artículos en blogs o categorías suscritas]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.likeableEntry.notification.like"><![CDATA[Notificarme cuando alguien reaccione a los artículos de mi blog]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis comentarios]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis respuestas a comentarios]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entry.mention"><![CDATA[Notificarme cuando me mencionen]]></item>
+	</category>
+	<category name="wcf.user.recentActivity">
+		<item name="wcf.user.recentActivity.com.woltlab.blog.recentActivityEvent.entry"><![CDATA[Artículo del blog]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.likeableEntry.recentActivityEvent"><![CDATA[Reacción (Artículo del blog)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.recentActivityEvent"><![CDATA[Comentario (Artículo del blog)]]></item>
+		<item name="wcf.user.recentActivity.com.woltlab.blog.entryComment.response.recentActivityEvent"><![CDATA[Respuesta (Artículo del blog)]]></item>
+	</category>
+	<category name="wcf.user.profile">
+		<item name="wcf.user.profile.menu.blogs"><![CDATA[Blogs]]></item>
+	</category>
+</import>
+<delete>
+	<item name="blog.blog.coverPhoto"/>
+	<item name="blog.blog.coverPhoto.limits"/>
+	<item name="blog.blog.delete.error.notEmpty"/>
+	<item name="blog.blog.featured"/>
+	<item name="blog.blog.setAsFeatured"/>
+	<item name="blog.blog.unsetAsFeatured"/>
+	<item name="blog.category.categories"/>
+	<item name="blog.category.childCategories"/>
+	<item name="blog.category.markAllAsRead"/>
+	<item name="blog.entry.comment.notification.mail"/>
+	<item name="blog.entry.comment.notification.mail.stacked"/>
+	<item name="blog.entry.commentResponse.notification.mail"/>
+	<item name="blog.entry.commentResponse.notification.mail.stacked"/>
+	<item name="blog.entry.commentResponseOwner.notification.mail"/>
+	<item name="blog.entry.commentResponseOwner.notification.mail.stacked"/>
+	<item name="blog.entry.date.error.notValid"/>
+	<item name="blog.entry.delete.sure"/>
+	<item name="blog.entry.markAllAsRead"/>
+	<item name="blog.entry.mention.notification.mail"/>
+	<item name="blog.entry.moreEntries.all"/>
+	<item name="blog.entry.notification.mail"/>
+	<item name="blog.entry.searchEntries"/>
+	<item name="blog.entry.showUserEntries"/>
+	<item name="blog.entry.subject"/>
+	<item name="blog.global.copyright"/>
+	<item name="blog.header.menu.blog"/>
+	<item name="blog.header.menu.blogs"/>
+	<item name="blog.header.menu.entries"/>
+	<item name="blog.header.menu.myBlogs"/>
+	<item name="blog.header.menu.unreadEntries"/>
+	<item name="blog.header.menu.watchedEntries"/>
+	<item name="blog.index.copyright"/>
+	<item name="blog.index.evaluation"/>
+	<item name="blog.index.news"/>
+	<item name="blog.search.categories"/>
+	<item name="blog.user.usersOnline.location.BlogEntryListPage"/>
+	<item name="blog.user.usersOnline.location.BlogListPage"/>
+	<item name="blog.user.usersOnline.location.BlogPage"/>
+	<item name="blog.user.usersOnline.location.EntryAddForm"/>
+	<item name="blog.user.usersOnline.location.EntryEditForm"/>
+	<item name="blog.user.usersOnline.location.EntryListPage.categorizedEntries"/>
+	<item name="blog.user.usersOnline.location.EntryListPage.userEntries"/>
+	<item name="blog.user.usersOnline.location.EntryPage"/>
+	<item name="wcf.acp.index.system.software.blogVersion"/>
+	<item name="wcf.acp.option.blog_dashboard_box_latest_entries"/>
+	<item name="wcf.acp.option.blog_dashboard_box_most_commented_entries"/>
+	<item name="wcf.acp.option.blog_dashboard_box_most_commented_entries_period"/>
+	<item name="wcf.acp.option.blog_dashboard_box_most_commented_entries_period.description"/>
+	<item name="wcf.acp.option.blog_entry_max_categories.description"/>
+	<item name="wcf.acp.option.blog_index_enable_online_list"/>
+	<item name="wcf.acp.option.blog_index_entries"/>
+	<item name="wcf.acp.option.blog_index_entries.description"/>
+	<item name="wcf.acp.option.blog_index_entries_period"/>
+	<item name="wcf.acp.option.blog_index_entries_period.description"/>
+	<item name="wcf.acp.option.blog_index_entry_categories"/>
+	<item name="wcf.acp.option.blog_index_entry_categories.description"/>
+	<item name="wcf.acp.option.blog_news_blog_id"/>
+	<item name="wcf.acp.option.blog_news_blog_id.description"/>
+	<item name="wcf.acp.option.blog_news_items"/>
+	<item name="wcf.acp.option.blog_user_profile_enable_user_entries"/>
+	<item name="wcf.acp.option.category.dashboard.content.entriesAsNews"/>
+	<item name="wcf.acp.option.category.dashboard.sidebar.latestEntries"/>
+	<item name="wcf.acp.option.category.dashboard.sidebar.mostCommentedEntries"/>
+	<item name="wcf.acp.rebuildData.com.woltlab.blog.blog"/>
+	<item name="wcf.acp.rebuildData.com.woltlab.blog.blog.description"/>
+	<item name="wcf.acp.rebuildData.com.woltlab.blog.entry"/>
+	<item name="wcf.acp.rebuildData.com.woltlab.blog.entry.description"/>
+	<item name="wcf.dashboard.box.com.woltlab.blog.categories"/>
+	<item name="wcf.dashboard.box.com.woltlab.blog.entriesAsNews"/>
+	<item name="wcf.dashboard.box.com.woltlab.blog.latestEntries"/>
+	<item name="wcf.dashboard.box.com.woltlab.blog.latestUpdatedBlogs"/>
+	<item name="wcf.dashboard.box.com.woltlab.blog.mostCommentedEntries"/>
+	<item name="wcf.dashboard.box.com.woltlab.blog.tagCloud"/>
+	<item name="wcf.dashboard.box.com.woltlab.blog.topBlogs"/>
+	<item name="wcf.dashboard.objectType.com.woltlab.blog.BlogListPage"/>
+	<item name="wcf.dashboard.objectType.com.woltlab.blog.BlogPage"/>
+	<item name="wcf.dashboard.objectType.com.woltlab.blog.EntryListPage"/>
+	<item name="wcf.page.category.com.woltlab.blog"/>
+	<item name="wcf.page.com.woltlab.blog.BlogAddForm"/>
+	<item name="wcf.page.com.woltlab.blog.BlogEditForm"/>
+	<item name="wcf.page.com.woltlab.blog.BlogEntryListPage"/>
+	<item name="wcf.page.com.woltlab.blog.BlogListPage"/>
+	<item name="wcf.page.com.woltlab.blog.BlogPage"/>
+	<item name="wcf.page.com.woltlab.blog.EntryAddForm"/>
+	<item name="wcf.page.com.woltlab.blog.EntryEditForm"/>
+	<item name="wcf.page.com.woltlab.blog.EntryListPage"/>
+	<item name="wcf.page.com.woltlab.blog.EntryPage"/>
+	<item name="wcf.page.com.woltlab.blog.UnreadEntryListPage"/>
+	<item name="wcf.page.com.woltlab.blog.WatchedEntryListPage"/>
+	<item name="wcf.page.onlineLocation.com.woltlab.blog.Blog"/>
+	<item name="wcf.page.onlineLocation.com.woltlab.blog.BlogList"/>
+	<item name="wcf.page.onlineLocation.com.woltlab.blog.EntryAdd"/>
+	<item name="wcf.page.sitemap.blog"/>
+	<item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.blog"/>
+	<item name="wcf.user.objectWatch.enableNotification.com.woltlab.blog.category"/>
+	<item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.blog"/>
+	<item name="wcf.user.objectWatch.subscribe.com.woltlab.blog.category"/>
+	<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.blog"/>
+	<item name="wcf.user.objectWatch.unsubscribe.com.woltlab.blog.category"/>
+</delete>
+</language>
