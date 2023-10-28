@@ -251,7 +251,7 @@
 		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
 		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[Los artículos del blog se eliminan de la papelera en los días siguientes. Establece 0 para desactivar.]]></item>
 		<item name="wcf.acp.option.blog_entry_default_sort_order"><![CDATA[Orden de clasificación]]></item>
-		<item name="wcf.acp.option.blog_entry_default_sort_order.description"><![CDATA[Elije el orden predeterminado de los artículos del blog.]]></item>
+		<item name="wcf.acp.option.blog_entry_default_sort_order.description"><![CDATA[Elige el orden predeterminado de los artículos del blog.]]></item>
 	</category>
 	<category name="wcf.acp.pip">
 		<item name="wcf.acp.pip.objectType.com.woltlab.blog.box.blogList.condition.data.title"><![CDATA[Blog List Box Condition Data]]></item>
