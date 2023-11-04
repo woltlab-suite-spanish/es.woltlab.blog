@@ -229,7 +229,7 @@
 		<item name="wcf.acp.group.option.user.blog.editTimeout.description"><![CDATA[Minutos permitidos para que los usuarios editen los artículos de su blog. Establece -1 para infinito.]]></item>
 		<item name="wcf.acp.group.option.user.blog.canSetTags"><![CDATA[Puede asignar tags a artículos de blog]]></item>
 		<item name="wcf.acp.group.option.user.blog.coverPhoto.maxSize"><![CDATA[Tamaño máximo del archivo de la foto de portada]]></item>
-		<item name="wcf.acp.group.canBeAddedAsBlogAuthor"><![CDATA[Grupos de usuarios pueden añadirse como autores en los blogs]]></item>
+		<item name="wcf.acp.group.canBeAddedAsBlogAuthor"><![CDATA[El grupo de usuarios puede añadirse como autor en los blogs]]></item>
 	</category>
 	<category name="wcf.acp.modificationLog">
 		<item name="wcf.acp.modificationLog.com.woltlab.blog.entry.delete"><![CDATA[Artículo del blog eliminado]]></item>
