@@ -148,8 +148,8 @@
 		<item name="blog.entry.sortField.views"><![CDATA[Visitas]]></item>
 		<item name="blog.entry.sortField.cumulativeLikes"><![CDATA[Reacciones]]></item>
 		<item name="blog.entry.condition.blog"><![CDATA[Blog]]></item>
-		<item name="blog.entry.condition.timeFrame"><![CDATA[Edad]]></item>
-		<item name="blog.entry.condition.timeFrame.description"><![CDATA[Esta opción establece la edad mínima y máxima en días de los artículos que aparecen en la caja.]]></item>
+		<item name="blog.entry.condition.timeFrame"><![CDATA[Antigüedad]]></item>
+		<item name="blog.entry.condition.timeFrame.description"><![CDATA[Esta opción establece la antigüedad mínima y máxima en días de los artículos que aparecen en la caja.]]></item>
 		<item name="blog.entry.condition.comments"><![CDATA[Comentarios]]></item>
 		<item name="blog.entry.condition.isFeatured"><![CDATA[Sólo artículos destacados]]></item>
 		<item name="blog.entry.bbcode.type"><![CDATA[Artículo del blog]]></item>
