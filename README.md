@@ -2,19 +2,19 @@
 Idioma español para **WoltLab Suite Blog** desarrollado por WoltLab GmbH.
 
 ### Todos los archivos de idioma
-* [WoltLab Suite Core](https://github.com/TranslationsLabEs/es.private.wcf)
-    * [WoltLab Suite Core: Conversations](https://github.com/TranslationsLabEs/es.private.wcf.conversation)
-    * [WoltLab Suite Core: Infractions](https://github.com/TranslationsLabEs/es.private.wcf.infraction)
-    * [WoltLab Suite Core: Moderated User Groups](https://github.com/TranslationsLabEs/es.private.wcf.moderatedUserGroup)
-    * [WoltLab Suite Core: Legal Notice](https://github.com/TranslationsLabEs/es.private.wcf.legalNotice)
-* [WoltLab Suite Forum](https://github.com/TranslationsLabEs/es.private.wbb)
-* [WoltLab Suite Gallery](https://github.com/TranslationsLabEs/es.private.gallery)
-* [WoltLab Suite Blog](https://github.com/TranslationsLabEs/es.private.blog)
-    * [WoltLab Suite Blog: Article Threads](https://github.com/TranslationsLabEs/es.blog.entryThread)
-* [WoltLab Suite Calendar](https://github.com/TranslationsLabEs/es.private.calendar)
-    * [WoltLab Suite Calendar: Event Threads](https://github.com/TranslationsLabEs/es.private.calendar.eventThread)
-* [WoltLab Suite Filebase](https://github.com/TranslationsLabEs/es.private.filebase)
-    * [WoltLab Suite Filebase: Support Threads](https://github.com/TranslationsLabEs/es.private.filebase.supportThread)
+* [WoltLab Suite Core](https://github.com/woltlab-suite-es/es.woltlab.wcf)
+    * [WoltLab Suite Core: Conversations](https://github.com/woltlab-suite-es/es.woltlab.wcf.conversation)
+    * [WoltLab Suite Core: Infractions](https://github.com/woltlab-suite-es/es.woltlab.wcf.infraction)
+    * [WoltLab Suite Core: Legal Notice](https://github.com/woltlab-suite-es/es.woltlab.wcf.legalNotice)
+    * [WoltLab Suite Core: Moderated User Groups](https://github.com/woltlab-suite-es/es.woltlab.wcf.moderatedUserGroup)
+* [WoltLab Suite Forum](https://github.com/woltlab-suite-es/es.woltlab.wbb)
+* [WoltLab Suite Gallery](https://github.com/woltlab-suite-es/es.woltlab.gallery)
+* [WoltLab Suite Blog](https://github.com/woltlab-suite-es/es.woltlab.blog)
+    * [WoltLab Suite Blog: Article Threads](https://github.com/woltlab-suite-es/es.woltlab.blog.entryThread)
+* [WoltLab Suite Calendar](https://github.com/woltlab-suite-es/es.private.calendar)
+    * [WoltLab Suite Calendar: Event Threads](https://github.com/woltlab-suite-es/es.woltlab.calendar.eventThread)
+* [WoltLab Suite Filebase](https://github.com/woltlab-suite-es/es.woltlab.filebase)
+    * [WoltLab Suite Filebase: Support Threads](https://github.com/woltlab-suite-es/es.woltlab.filebase.supportThread)
 
 ### Cómo instalar un archivo de idioma
 Descarga el archivo de idioma `es.xml` y súbelo a `Administration Panel Control > Customization > Languages > Import Language`.
