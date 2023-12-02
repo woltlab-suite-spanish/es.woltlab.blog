@@ -47,7 +47,7 @@
 		<item name="blog.blog.about"><![CDATA[Acerca del blog]]></item>
 	</category>
 	<category name="blog.category">
-		<item name="blog.category.delete.sure"><![CDATA[¿Realmentes quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los artículos que sólo estén en esta categoría serán eliminados.]]></item>
+		<item name="blog.category.delete.sure"><![CDATA[¿Realmentes quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los artículos que sólo pertenezcan a esta categoría serán eliminados.]]></item>
 	</category>
 	<category name="blog.entry">
 		<item name="blog.entry.blog"><![CDATA[Blog]]></item>
