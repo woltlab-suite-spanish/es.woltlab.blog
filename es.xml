@@ -188,7 +188,7 @@
 		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.attachment"><![CDATA[Archivos adjuntos del blog]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment"><![CDATA[Comentarios del blog]]></item>
 		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.comment.response"><![CDATA[Respuestas a comentarios del blog]]></item>
-		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.like"><![CDATA[Me gusta del blog]]></item>
+		<item name="wcf.acp.dataImport.data.com.woltlab.blog.entry.like"><![CDATA[Reacciones del blog]]></item>
 	</category>
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.user.blog"><![CDATA[Blog]]></item>
