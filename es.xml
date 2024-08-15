@@ -13,11 +13,11 @@
 		<item name="blog.blog.edit"><![CDATA[Editar blog]]></item>
 		<item name="blog.blog.list"><![CDATA[Blogs]]></item>
 		<item name="blog.blog.accessLevel"><![CDATA[Puede ver el blog]]></item>
-		<item name="blog.blog.accessLevel.description"><![CDATA[Este blog y sus contenidos deben ser accesibles sólo para los usuarios seleccionados.]]></item>
+		<item name="blog.blog.accessLevel.description"><![CDATA[Este blog y sus contenidos deben ser accesibles solo para los usuarios seleccionados.]]></item>
 		<item name="blog.blog.accessLevel.everyone"><![CDATA[Todos]]></item>
 		<item name="blog.blog.accessLevel.registered"><![CDATA[Usuarios registrados]]></item>
 		<item name="blog.blog.accessLevel.following"><![CDATA[Usuarios seguidos]]></item>
-		<item name="blog.blog.accessLevel.owner"><![CDATA[Sólo yo]]></item>
+		<item name="blog.blog.accessLevel.owner"><![CDATA[Solo yo]]></item>
 		<item name="blog.blog.description.description"><![CDATA[Introduce una breve descripción de tu blog, no debe superar los 500 caracteres.]]></item>
 		<item name="blog.blog.description.error.tooLong"><![CDATA[La descripción es demasiado larga, debe tener menos de 500 caracteres.]]></item>
 		<item name="blog.blog.authors"><![CDATA[Autores adicionales]]></item>
@@ -47,7 +47,7 @@
 		<item name="blog.blog.about"><![CDATA[Acerca del blog]]></item>
 	</category>
 	<category name="blog.category">
-		<item name="blog.category.delete.sure"><![CDATA[¿Realmentes quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los artículos que sólo pertenezcan a esta categoría serán eliminados.]]></item>
+		<item name="blog.category.delete.sure"><![CDATA[¿Realmentes quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los artículos que solo pertenezcan a esta categoría serán eliminados.]]></item>
 	</category>
 	<category name="blog.entry">
 		<item name="blog.entry.blog"><![CDATA[Blog]]></item>
@@ -151,7 +151,7 @@
 		<item name="blog.entry.condition.timeFrame"><![CDATA[Antigüedad]]></item>
 		<item name="blog.entry.condition.timeFrame.description"><![CDATA[Esta opción establece la antigüedad mínima y máxima en días de los artículos que aparecen en la caja.]]></item>
 		<item name="blog.entry.condition.comments"><![CDATA[Comentarios]]></item>
-		<item name="blog.entry.condition.isFeatured"><![CDATA[Sólo artículos destacados]]></item>
+		<item name="blog.entry.condition.isFeatured"><![CDATA[Solo artículos destacados]]></item>
 		<item name="blog.entry.bbcode.type"><![CDATA[Artículo del blog]]></item>
 	</category>
 	<category name="blog.index">
