@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/5.4/language.xsd" languagecode="es" languagename="Español" countrycode="es">
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/6.0/language.xsd" languagecode="es">
 <import>
 	<category name="blog.acp.menu">
 		<item name="blog.acp.menu.link.blog"><![CDATA[Blog]]></item>
@@ -102,7 +102,6 @@
 		<item name="blog.entry.moderation.info"><![CDATA[Los artículos recién creados permanecerán inaccesibles hasta que sean aprobados por un moderador.]]></item>
 		<item name="blog.entry.moderation.redirect"><![CDATA[Tu artículo ha sido creado y se mostrará una vez sea aprobado.]]></item>
 		<item name="blog.entry.moreEntries"><![CDATA[Más artículos]]></item>
-		<item name="blog.entry.noEntries"><![CDATA[No hay artículos en el blog en este momento.]]></item>
 		<item name="blog.entry.notification.mail.plaintext"><![CDATA[{@$author} ha escrito el artículo del blog “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
 		<item name="blog.entry.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> ha escrito el artículo del blog <a href="{$entry->getLink()}">{$entry->getTitle()}</a>:</p>]]></item>
 		<item name="blog.entry.notification.message"><![CDATA[<strong>{$author}</strong> ha escrito el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
@@ -110,15 +109,14 @@
 		<item name="blog.entry.publication"><![CDATA[Publicación]]></item>
 		<item name="blog.entry.publicationDate"><![CDATA[Fecha de publicación]]></item>
 		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[La fecha de publicación no es válida.]]></item>
-		<item name="blog.entry.recentActivity.entry"><![CDATA[Ha escrito el artículo del blog {anchor object=$entry class='blogEntryLink'}.]]></item>
-		<item name="blog.entry.recentActivity.entryComment"><![CDATA[Ha comentado en el artículo del blog {anchor link=$comment content=$entry class='blogEntryLink'}.]]></item>
-		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[Ha respondido a un comentario de {user object=$commentAuthor} en el artículo del blog {anchor link=$response content=$entry class='blogEntryLink'}.]]></item>
-		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[Ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{@$reactionType->renderIcon()}</span> al artículo del blog {anchor object=$entry class='blogEntryLink'}.]]></item>
+		<item name="blog.entry.recentActivity.entry"><![CDATA[<strong>{$author}</strong> ha escrito el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.recentActivity.entryComment"><![CDATA[<strong>{$author}</strong> ha comentado en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[<strong>{$author}</strong> ha respondido a un comentario de <strong>{$commentAuthor}</strong> en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[<strong>{$author}</strong> ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{unsafe:$reactionType->renderIcon()}</span> al artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.userEntries"><![CDATA[Artículos del blog de {$user->username}]]></item>
 		<item name="blog.entry.views"><![CDATA[Visitas]]></item>
 		<item name="blog.entry.views.count"><![CDATA[{plural value=$entry->views one='# lectura' other='# lecturas'}]]></item>
 		<item name="blog.entry.watchedEntries"><![CDATA[Artículos del blog suscritos]]></item>
-		<item name="blog.entry.categories"><![CDATA[Categorías]]></item>
 		<item name="blog.entry.message"><![CDATA[Mensaje]]></item>
 		<item name="blog.entry.unreadEntries"><![CDATA[Artículos del blog no leídos]]></item>
 		<item name="blog.entry.log.trash.summary"><![CDATA[La entrada ha sido eliminada por {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} por el siguiente motivo: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
