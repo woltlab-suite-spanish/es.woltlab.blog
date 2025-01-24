@@ -119,7 +119,7 @@
 		<item name="blog.entry.watchedEntries"><![CDATA[Artículos del blog suscritos]]></item>
 		<item name="blog.entry.message"><![CDATA[Mensaje]]></item>
 		<item name="blog.entry.unreadEntries"><![CDATA[Artículos del blog no leídos]]></item>
-		<item name="blog.entry.log.trash.summary"><![CDATA[La entrada ha sido eliminada por {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-user-id="{@$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} por el siguiente motivo: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
+		<item name="blog.entry.log.trash.summary"><![CDATA[La entrada ha sido eliminada por {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} por el siguiente motivo: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
 		<item name="blog.entry.hasOldVersions"><![CDATA[Esta entrada del blog tiene versiones anteriores guardadas.]]></item>
 		<item name="blog.entry.editReason"><![CDATA[Motivo de edición (opcional)]]></item>
 		<item name="blog.entry.draft"><![CDATA[Borrador]]></item>
