@@ -247,7 +247,7 @@
 		<item name="wcf.acp.option.blog_message_sidebar_enable_user_entries"><![CDATA[Mostrar el número de artículos del blog del autor]]></item>
 		<item name="wcf.acp.option.blog_entry_max_categories"><![CDATA[Máximo de categorías por artículo]]></item>
 		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
-		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[Los artículos del blog se eliminan de la papelera después de los días indicados. Utiliza 0 para desactivar.]]></item>
+		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[Los artículos del blog se eliminan de la papelera después de los días indicados. Usa 0 para desactivar.]]></item>
 		<item name="wcf.acp.option.blog_entry_default_sort_order"><![CDATA[Orden de clasificación]]></item>
 		<item name="wcf.acp.option.blog_entry_default_sort_order.description"><![CDATA[Elige el orden de clasificación por defecto de los artículos del blog.]]></item>
 	</category>
