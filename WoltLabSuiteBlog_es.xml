@@ -7,11 +7,9 @@
 		<item name="blog.acp.menu.link.blog.category.add"><![CDATA[Añadir categoría]]></item>
 	</category>
 	<category name="blog.blog">
-		<item name="blog.blog.moreBlogs"><![CDATA[Más blogs]]></item>
 		<item name="blog.blog.button.add"><![CDATA[Crear blog]]></item>
 		<item name="blog.blog.add"><![CDATA[Crear blog]]></item>
 		<item name="blog.blog.edit"><![CDATA[Editar blog]]></item>
-		<item name="blog.blog.list"><![CDATA[Blogs]]></item>
 		<item name="blog.blog.accessLevel"><![CDATA[Puede ver el blog]]></item>
 		<item name="blog.blog.accessLevel.description"><![CDATA[Este blog y sus contenidos deben ser accesibles solo para los usuarios seleccionados.]]></item>
 		<item name="blog.blog.accessLevel.everyone"><![CDATA[Todos]]></item>
@@ -19,24 +17,17 @@
 		<item name="blog.blog.accessLevel.following"><![CDATA[Usuarios seguidos]]></item>
 		<item name="blog.blog.accessLevel.owner"><![CDATA[Solo yo]]></item>
 		<item name="blog.blog.description.description"><![CDATA[Introduce una breve descripción de tu blog, no debe superar los 500 caracteres.]]></item>
-		<item name="blog.blog.description.error.tooLong"><![CDATA[La descripción es demasiado larga, debe tener menos de 500 caracteres.]]></item>
 		<item name="blog.blog.authors"><![CDATA[Autores adicionales]]></item>
-		<item name="blog.blog.authors.description"><![CDATA[Opcional: Puedes añadir usuarios adicionales que pueden crear nuevos artículos y editar los existentes. Separa múltiples usuarios con una coma.]]></item>
+		<item name="blog.blog.authors.description"><![CDATA[Opcional: Puedes añadir usuarios adicionales que pueden crear nuevos artículos y editar los existentes.]]></item>
+		<item name="blog.blog.authorGroups"><![CDATA[Autores adicionales (Grupos de usuarios)]]></item>
 		<item name="blog.blog.subscribers"><![CDATA[Suscriptores]]></item>
 		<item name="blog.blog.subscribers.label"><![CDATA[{plural value=$blog->subscribers one='# suscriptor' other='# suscriptores'}]]></item>
-		<item name="blog.blog.delete"><![CDATA[Eliminar]]></item>
-		<item name="blog.blog.delete.confirmMessage"><![CDATA[¿Realmente quieres eliminar este blog?]]></item>
-		<item name="blog.blog.authors.error.notFound"><![CDATA[El nombre de usuario “{$errorData[username]}” no existe.]]></item>
 		<item name="blog.blog.lastUpdateTime"><![CDATA[Última actualización]]></item>
-		<item name="blog.blog.button.sort"><![CDATA[Ordenar]]></item>
 		<item name="blog.blog.otherAuthor.entries"><![CDATA[{plural value=$otherAuthor->entries one='# artículo' other='# artículos'}]]></item>
 		<item name="blog.blog.archive"><![CDATA[Archivo]]></item>
 		<item name="blog.blog.searchBlog"><![CDATA[Buscar en el blog]]></item>
 		<item name="blog.blog.searchAllBlogs"><![CDATA[Buscar en todos los blogs]]></item>
-		<item name="blog.blog.showAll"><![CDATA[Mostrar todos los blogs]]></item>
 		<item name="blog.blog.lastEntry"><![CDATA[Último artículo]]></item>
-		<item name="blog.blog.boxList.description.cumulativeLikes"/>
-		<item name="blog.blog.boxList.description.lastUpdateTime"><![CDATA[{user object=$boxBlog->getUserProfile()} <span class="separatorLeft">{@$boxBlog->lastUpdateTime|time}</span>]]></item>
 		<item name="blog.blog.sortField.title"><![CDATA[Título]]></item>
 		<item name="blog.blog.sortField.lastUpdateTime"><![CDATA[Última actualización]]></item>
 		<item name="blog.blog.sortField.entries"><![CDATA[Artículos]]></item>
@@ -45,6 +36,7 @@
 		<item name="blog.blog.sortField.cumulativeLikes"><![CDATA[Reacciones]]></item>
 		<item name="blog.blog.condition.cumulativeLikes"><![CDATA[Reacciones]]></item>
 		<item name="blog.blog.about"><![CDATA[Acerca del blog]]></item>
+		<item name="blog.blog.blogs"><![CDATA[Blogs]]></item>
 	</category>
 	<category name="blog.category">
 		<item name="blog.category.delete.sure"><![CDATA[¿Realmente quieres eliminar esta categoría? Todas las categorías secundarias de esta categoría se moverán a la categoría principal. Los artículos que solo pertenezcan a esta categoría serán eliminados.]]></item>
@@ -79,22 +71,12 @@
 		<item name="blog.entry.commentResponseOwner.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un invitado{/if} ha respondido al comentario de <strong>{$commentAuthor->username}</strong> en tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.commentResponseOwner.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} {if $count == 1}ha respondido{else}han respondido{/if} al comentario de <strong>{$author->username}</strong> en tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.delayedPublication"><![CDATA[El artículo se publicará el {@$entry->publicationDate|plainTime}.]]></item>
-		<item name="blog.entry.delete.success"><![CDATA[El artículo ha sido eliminado.]]></item>
-		<item name="blog.entry.delete"><![CDATA[Eliminar]]></item>
-		<item name="blog.entry.delete.confirmMessage"><![CDATA[¿Realmente quieres eliminar este artículo?]]></item>
-		<item name="blog.entry.disable"><![CDATA[Desactivar]]></item>
-		<item name="blog.entry.enable"><![CDATA[Aprobar]]></item>
-		<item name="blog.entry.restore"><![CDATA[Restaurar]]></item>
-		<item name="blog.entry.trash"><![CDATA[Mover a la papelera]]></item>
-		<item name="blog.entry.trash.confirmMessage"><![CDATA[¿Realmente quieres mover este artículo a la papelera?]]></item>
-		<item name="blog.entry.trash.reason"><![CDATA[Motivo (opcional)]]></item>
-		<item name="blog.entry.edit"><![CDATA[Editar artículo del blog]]></item>
+		<item name="blog.entry.edit"><![CDATA[Editar artículo]]></item>
 		<item name="blog.entry.enableComments"><![CDATA[Activar comentarios]]></item>
 		<item name="blog.entry.enableComments.description"><![CDATA[Permite a los usuarios comentar en este artículo.]]></item>
 		<item name="blog.entry.enableDelayedPublication"><![CDATA[Publicación aplazada]]></item>
 		<item name="blog.entry.entries"><![CDATA[Artículos del blog]]></item>
 		<item name="blog.entry.entries.label"><![CDATA[{plural value=$blog->entries one='# artículo' other='# artículos'}]]></item>
-		<item name="blog.entry.information"><![CDATA[Información]]></item>
 		<item name="blog.entry.like.notification.title"><![CDATA[Reacción a tu artículo del blog]]></item>
 		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} usuarios han reaccionado a tu artículo del blog]]></item>
 		<item name="blog.entry.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado a tu artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
@@ -108,7 +90,6 @@
 		<item name="blog.entry.notification.title"><![CDATA[Nuevo artículo del blog]]></item>
 		<item name="blog.entry.publication"><![CDATA[Publicación]]></item>
 		<item name="blog.entry.publicationDate"><![CDATA[Fecha de publicación]]></item>
-		<item name="blog.entry.publicationDate.error.invalid"><![CDATA[La fecha de publicación no es válida.]]></item>
 		<item name="blog.entry.recentActivity.entry"><![CDATA[<strong>{$author}</strong> ha escrito el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.recentActivity.entryComment"><![CDATA[<strong>{$author}</strong> ha comentado en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[<strong>{$author}</strong> ha respondido a un comentario de <strong>{$commentAuthor}</strong> en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
@@ -119,12 +100,11 @@
 		<item name="blog.entry.watchedEntries"><![CDATA[Artículos del blog suscritos]]></item>
 		<item name="blog.entry.message"><![CDATA[Mensaje]]></item>
 		<item name="blog.entry.unreadEntries"><![CDATA[Artículos del blog no leídos]]></item>
-		<item name="blog.entry.log.trash.summary"><![CDATA[La entrada ha sido eliminada por {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} por el siguiente motivo: {$additionalData[reason]}{/if}. ({@$time|time}).]]></item>
-		<item name="blog.entry.hasOldVersions"><![CDATA[Esta entrada del blog tiene versiones anteriores guardadas.]]></item>
+		<item name="blog.entry.log.trash.summary"><![CDATA[La entrada ha sido eliminada por {if $userID}<a href="{link controller='User' id=$userID title=$username}{/link}" class="userLink" data-object-id="{$userID}">{$username}</a>{else}{$username}{/if}{if $additionalData[reason]} por el siguiente motivo: {$additionalData[reason]}{/if}. ({time time=$time}).]]></item>
+		<item name="blog.entry.editHistory"><![CDATA[Historial de edición]]></item>
 		<item name="blog.entry.editReason"><![CDATA[Motivo de edición (opcional)]]></item>
 		<item name="blog.entry.draft"><![CDATA[Borrador]]></item>
-		<item name="blog.entry.button.saveAsDraft"><![CDATA[Guardar borrador]]></item>
-		<item name="blog.entry.button.publish"><![CDATA[Publicar]]></item>
+		<item name="blog.entry.saveAsDraft"><![CDATA[Guardar como borrador]]></item>
 		<item name="blog.entry.setAsFeatured"><![CDATA[Marcar como destacado]]></item>
 		<item name="blog.entry.unsetAsFeatured"><![CDATA[Eliminar marca de destacado]]></item>
 		<item name="blog.entry.featured"><![CDATA[Destacado]]></item>
@@ -132,14 +112,9 @@
 		<item name="blog.entry.mention.notification.message"><![CDATA[<strong>{$author}</strong> te ha mencionado en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.mention.notification.mail.plaintext"><![CDATA[{@$author} te ha mencionado en el artículo del blog “{@$entry->getTitle()}” [URL:{@$entry->getLink()}]:]]></item>
 		<item name="blog.entry.mention.notification.mail.html"><![CDATA[<p><strong>{$author}</strong> te ha mencionado en el artículo del blog <a href="{$entry->getLink()}">{$entry->getTitle()}</a>:</p>]]></item>
-		<item name="blog.entry.categories.error.tooMany"><![CDATA[Has seleccionado demasiadas categorías. Puedes seleccionar hasta {@BLOG_ENTRY_MAX_CATEGORIES} {if BLOG_ENTRY_MAX_CATEGORIES == 1}categoría{else}categorías{/if}.]]></item>
-		<item name="blog.entry.date"><![CDATA[Fecha]]></item>
-		<item name="blog.entry.date.error.invalid"><![CDATA[La fecha establecida no es válida, la fecha no puede ser en el futuro.]]></item>
 		<item name="blog.entry.label.readMore"><![CDATA[Insertar [readmore]]]></item>
 		<item name="blog.entry.previousEntry"><![CDATA[Artículo anterior]]></item>
 		<item name="blog.entry.nextEntry"><![CDATA[Siguiente artículo]]></item>
-		<item name="blog.entry.boxList.description.comments"><![CDATA[{plural value=$boxEntry->comments one='# comentario' other='# comentarios'}]]></item>
-		<item name="blog.entry.boxList.description.time"><![CDATA[{user object=$boxEntry->getUserProfile()} <span class="separatorLeft">{@$boxEntry->time|time}</span>]]></item>
 		<item name="blog.entry.sortField.subject"><![CDATA[Título]]></item>
 		<item name="blog.entry.sortField.time"><![CDATA[Fecha]]></item>
 		<item name="blog.entry.sortField.comments"><![CDATA[Comentarios]]></item>
@@ -155,9 +130,9 @@
 	<category name="blog.index">
 		<item name="blog.index.stats"><![CDATA[Estadísticas]]></item>
 		<item name="blog.index.stats.detail"><![CDATA[<ul class="inlineList dotSeparated">
-<li>{plural value=$stats[authors] one='# autor' other='# autores'}</li>
-<li>{plural value=$stats[entries] one='# artículo' other='# artículos'} ({plural value=$stats[entriesPerDay] one='# artículo' other='# artículos'} por día)</li>
-<li>{plural value=$stats[comments] one='# comentario' other='# comentarios'}</li>
+<li>{plural value=$blogStats->authors one='# autor' other='# autores'}</li>
+<li>{plural value=$blogStats->entries one='# artículo' other='# artículos'} ({plural value=$blogStats->entriesPerDay one='# artículo' other='# artículos'} por día)</li>
+<li>{plural value=$blogStats->comments one='# comentario' other='# comentarios'}</li>
 </ul>]]></item>
 	</category>
 	<category name="wcf.acl.option">
@@ -245,7 +220,6 @@
 		<item name="wcf.acp.option.blog_entries_per_page"><![CDATA[Artículos del blog por página]]></item>
 		<item name="wcf.acp.option.blog_excerpt_length"><![CDATA[Longitud del extracto]]></item>
 		<item name="wcf.acp.option.blog_message_sidebar_enable_user_entries"><![CDATA[Mostrar el número de artículos del blog del autor]]></item>
-		<item name="wcf.acp.option.blog_entry_max_categories"><![CDATA[Máximo de categorías por artículo]]></item>
 		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle"><![CDATA[Vaciar papelera]]></item>
 		<item name="wcf.acp.option.blog_entry_empty_recycle_bin_cycle.description"><![CDATA[Los artículos del blog se eliminan de la papelera después de los días indicados. Usa 0 para desactivar.]]></item>
 		<item name="wcf.acp.option.blog_entry_default_sort_order"><![CDATA[Orden de clasificación]]></item>
@@ -311,7 +285,6 @@
 	<category name="wcf.user">
 		<item name="wcf.user.activityPoint.objectType.com.woltlab.blog.activityPointEvent.entry"><![CDATA[Artículos del blog]]></item>
 		<item name="wcf.user.boxList.description.blogEntries"><![CDATA[{plural value=$boxUser->blogEntries one='# artículo del blog' other='# artículos del blog'}]]></item>
-		<item name="wcf.user.sortField.blogEntries"><![CDATA[Artículos del blog]]></item>
 	</category>
 	<category name="wcf.user.condition">
 		<item name="wcf.user.condition.blogEntries"><![CDATA[Artículos del blog]]></item>
