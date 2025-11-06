@@ -89,7 +89,7 @@
 		<item name="blog.entry.trash.confirmMessage"><![CDATA[¿Realmente quieres mover este artículo a la papelera?]]></item>
 		<item name="blog.entry.trash.reason"><![CDATA[Motivo (opcional)]]></item>
 		<item name="blog.entry.edit"><![CDATA[Editar artículo del blog]]></item>
-		<item name="blog.entry.enableComments"><![CDATA[Habilitar comentarios]]></item>
+		<item name="blog.entry.enableComments"><![CDATA[Activar comentarios]]></item>
 		<item name="blog.entry.enableComments.description"><![CDATA[Permite a los usuarios comentar en este artículo.]]></item>
 		<item name="blog.entry.enableDelayedPublication"><![CDATA[Publicación aplazada]]></item>
 		<item name="blog.entry.entries"><![CDATA[Artículos del blog]]></item>
