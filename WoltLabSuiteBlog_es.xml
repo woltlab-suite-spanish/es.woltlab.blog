@@ -49,8 +49,8 @@
 		<item name="blog.entry.comment"><![CDATA[Comentario de artículo del blog]]></item>
 		<item name="blog.entry.comment.like.notification.title"><![CDATA[Reacción a tu comentario (Artículo del blog)]]></item>
 		<item name="blog.entry.comment.like.notification.title.stacked"><![CDATA[{#$count} usuarios han reaccionado a tu comentario (Artículo del blog)]]></item>
-		<item name="blog.entry.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado a tu comentario en el artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-		<item name="blog.entry.comment.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} han reaccionado a tu comentario en el artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.comment.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado con {unsafe:$reaction->renderIcon()} a tu comentario en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.comment.like.notification.message.stacked"><![CDATA[{unsafe:$authorList} han reaccionado{if $reaction} con {unsafe:$reaction->renderIcon()}{/if} a tu comentario en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.comment.notification.mail.plaintext"><![CDATA[{@$authorList} ha comentado en tu artículo del blog “{@$entry->getTitle()}” [URL:{@$entry->getLink()}#comment{@$commentID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
 		<item name="blog.entry.comment.notification.mail.html"><![CDATA[<p>{@$authorList} ha comentado en tu artículo del blog <a href="{$entry->getLink()}#comment{@$commentID}">{$entry->getTitle()}</a>:</p>]]></item>
 		<item name="blog.entry.comment.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un invitado{/if} ha comentado en tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
@@ -60,8 +60,8 @@
 		<item name="blog.entry.commentResponse"><![CDATA[Respuesta a comentario del artículo del blog]]></item>
 		<item name="blog.entry.commentResponse.like.notification.title"><![CDATA[Reacción a tu respuesta a un comentario (Artículo del blog)]]></item>
 		<item name="blog.entry.commentResponse.like.notification.title.stacked"><![CDATA[{#$count} usuarios han reaccionado a tu respuesta a un comentario (Artículo del blog)]]></item>
-		<item name="blog.entry.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado a tu respuesta a un comentario en el artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-		<item name="blog.entry.commentResponse.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} han reaccionado a tu respuesta a un comentario en el artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado con {unsafe:$reaction->renderIcon()} a tu respuesta a un comentario en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.commentResponse.like.notification.message.stacked"><![CDATA[{unsafe:$authorList} han reaccionado{if $reaction} con {unsafe:$reaction->renderIcon()}{/if} a tu respuesta a un comentario en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.commentResponse.notification.mail.plaintext"><![CDATA[{@$authorList} ha respondido a tu comentario en el artículo del blog “{@$entry->getTitle()}” [URL:{@$entry->getLink()}#comment{@$commentID}/response{@$responseID}]{if $count == 1 && !$guestTimesTriggered}:{else}.{/if}]]></item>
 		<item name="blog.entry.commentResponse.notification.mail.html"><![CDATA[<p>{@$authorList} ha respondido a tu comentario en el artículo del blog <a href="{$entry->getLink()}#comment{@$commentID}/response{@$responseID}">{$entry->getTitle()}</a>:</p>]]></item>
 		<item name="blog.entry.commentResponse.notification.message"><![CDATA[{if $author->userID}<strong>{$author}</strong>{else}Un invitado{/if} ha respondido a tu comentario en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
@@ -79,8 +79,8 @@
 		<item name="blog.entry.entries.label"><![CDATA[{plural value=$blog->entries one='# artículo' other='# artículos'}]]></item>
 		<item name="blog.entry.like.notification.title"><![CDATA[Reacción a tu artículo del blog]]></item>
 		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} usuarios han reaccionado a tu artículo del blog]]></item>
-		<item name="blog.entry.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado a tu artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
-		<item name="blog.entry.like.notification.message.stacked"><![CDATA[{@'wcf.user.notification.stacked.authorList'|language} han reaccionado a tu artículo del blog <strong>{$entry->getTitle()}</strong> ({@$__wcf->getReactionHandler()->renderInlineList($reactions)}).]]></item>
+		<item name="blog.entry.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado con {unsafe:$reaction->renderIcon()} a tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.like.notification.message.stacked"><![CDATA[{unsafe:$authorList} han reaccionado{if $reaction} con {unsafe:$reaction->renderIcon()}{/if} a tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.moderation.info"><![CDATA[Los artículos recién creados permanecerán inaccesibles hasta que sean aprobados por un moderador.]]></item>
 		<item name="blog.entry.moderation.redirect"><![CDATA[Tu artículo ha sido creado y se mostrará una vez sea aprobado.]]></item>
 		<item name="blog.entry.moreEntries"><![CDATA[Más artículos]]></item>
@@ -93,7 +93,7 @@
 		<item name="blog.entry.recentActivity.entry"><![CDATA[<strong>{$author}</strong> ha escrito el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.recentActivity.entryComment"><![CDATA[<strong>{$author}</strong> ha comentado en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.recentActivity.entryCommentResponse"><![CDATA[<strong>{$author}</strong> ha respondido a un comentario de <strong>{$commentAuthor}</strong> en el artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
-		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[<strong>{$author}</strong> ha reaccionado con <span title="{$reactionType->getTitle()}" class="jsTooltip">{unsafe:$reactionType->renderIcon()}</span> al artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
+		<item name="blog.entry.recentActivity.likedEntry"><![CDATA[<strong>{$author}</strong> ha reaccionado con {unsafe:$reactionType->renderIcon()} al artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
 		<item name="blog.entry.userEntries"><![CDATA[Artículos del blog de {$user->username}]]></item>
 		<item name="blog.entry.views"><![CDATA[Visitas]]></item>
 		<item name="blog.entry.views.count"><![CDATA[{plural value=$entry->views one='# lectura' other='# lecturas'}]]></item>
