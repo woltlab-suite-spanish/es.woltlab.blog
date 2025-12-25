@@ -292,14 +292,14 @@
 	</category>
 	<category name="wcf.user.notification">
 		<item name="wcf.user.notification.com.woltlab.blog"><![CDATA[Blog]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.notification.comment"><![CDATA[Notificarme nuevos comentarios en los artículos de mi blog]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponse"><![CDATA[Notificarme nuevas respuestas a mis comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponseOwner"><![CDATA[Notificarme nuevas respuestas a comentarios en artículos de mi blog]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entry.entry"><![CDATA[Notificarme nuevos artículos en blogs o categorías suscritas]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.likeableEntry.notification.like"><![CDATA[Notificarme cuando alguien reaccione a los artículos de mi blog]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.like.notification.like"><![CDATA[Notificarme cuando alguien reaccione a mis respuestas a comentarios]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entry.mention"><![CDATA[Notificarme cuando me mencionen]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.notification.comment"><![CDATA[Nuevo comentario en tu artículo del blog]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponse"><![CDATA[Nueva respuesta a tu comentario]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponseOwner"><![CDATA[Nueva respuesta a un comentario en tu artículo del blog]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entry.entry"><![CDATA[Nuevo artículo en blog o categoría suscrita]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.likeableEntry.notification.like"><![CDATA[Reacción a tu artículo del blog]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.like.notification.like"><![CDATA[Reacción a tu comentario]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.like.notification.like"><![CDATA[Reacción a tu respuesta a un comentario]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entry.mention"><![CDATA[Has sido mencionado]]></item>
 	</category>
 	<category name="wcf.user.recentActivity">
 		<item name="wcf.user.recentActivity.com.woltlab.blog.recentActivityEvent.entry"><![CDATA[Artículo del blog]]></item>
