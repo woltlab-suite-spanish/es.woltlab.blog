@@ -21,7 +21,6 @@
 		<item name="blog.blog.authors.description"><![CDATA[Opcional: Puedes añadir usuarios adicionales que pueden crear nuevos artículos y editar los existentes.]]></item>
 		<item name="blog.blog.authorGroups"><![CDATA[Autores adicionales (Grupos de usuarios)]]></item>
 		<item name="blog.blog.subscribers"><![CDATA[Suscriptores]]></item>
-		<item name="blog.blog.subscribers.label"><![CDATA[{plural value=$blog->subscribers one='# suscriptor' other='# suscriptores'}]]></item>
 		<item name="blog.blog.lastUpdateTime"><![CDATA[Última actualización]]></item>
 		<item name="blog.blog.otherAuthor.entries"><![CDATA[{plural value=$otherAuthor->entries one='# artículo' other='# artículos'}]]></item>
 		<item name="blog.blog.archive"><![CDATA[Archivo]]></item>
@@ -76,7 +75,6 @@
 		<item name="blog.entry.enableComments.description"><![CDATA[Permite a los usuarios comentar en este artículo.]]></item>
 		<item name="blog.entry.enableDelayedPublication"><![CDATA[Publicación aplazada]]></item>
 		<item name="blog.entry.entries"><![CDATA[Artículos del blog]]></item>
-		<item name="blog.entry.entries.label"><![CDATA[{plural value=$blog->entries one='# artículo' other='# artículos'}]]></item>
 		<item name="blog.entry.like.notification.title"><![CDATA[Reacción a tu artículo del blog]]></item>
 		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} usuarios han reaccionado a tu artículo del blog]]></item>
 		<item name="blog.entry.like.notification.message"><![CDATA[<strong>{$author}</strong> ha reaccionado con {unsafe:$reaction->renderIcon()} a tu artículo del blog <strong>{$entry->getTitle()}</strong>.]]></item>
@@ -343,5 +341,7 @@
 	<item name="blog.entry.trash.reason"/>
 	<item name="wcf.acp.option.blog_entry_max_categories"/>
 	<item name="wcf.user.sortField.blogEntries"/>
+	<item name="blog.blog.subscribers.label"/>
+	<item name="blog.entry.entries.label"/>
 </delete>
 </language>
