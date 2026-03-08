@@ -73,7 +73,7 @@
 		<item name="blog.entry.edit"><![CDATA[Editar artículo]]></item>
 		<item name="blog.entry.enableComments"><![CDATA[Activar comentarios]]></item>
 		<item name="blog.entry.enableComments.description"><![CDATA[Permite a los usuarios comentar en este artículo.]]></item>
-		<item name="blog.entry.enableDelayedPublication"><![CDATA[Publicación aplazada]]></item>
+		<item name="blog.entry.enableDelayedPublication"><![CDATA[Publicación programada]]></item>
 		<item name="blog.entry.entries"><![CDATA[Artículos del blog]]></item>
 		<item name="blog.entry.like.notification.title"><![CDATA[Reacción a tu artículo del blog]]></item>
 		<item name="blog.entry.like.notification.title.stacked"><![CDATA[{#$count} usuarios han reaccionado a tu artículo del blog]]></item>
