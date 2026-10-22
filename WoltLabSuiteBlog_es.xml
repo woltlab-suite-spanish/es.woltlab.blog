@@ -293,7 +293,7 @@
 		<item name="wcf.user.notification.com.woltlab.blog.entryComment.notification.comment"><![CDATA[Nuevo comentario en tu artículo del blog]]></item>
 		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponse"><![CDATA[Nueva respuesta a tu comentario]]></item>
 		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.notification.commentResponseOwner"><![CDATA[Nueva respuesta a un comentario en tu artículo del blog]]></item>
-		<item name="wcf.user.notification.com.woltlab.blog.entry.entry"><![CDATA[Nuevo artículo en blog o categoría suscrita]]></item>
+		<item name="wcf.user.notification.com.woltlab.blog.entry.entry"><![CDATA[Nuevo artículo en un blog o categoría suscrita]]></item>
 		<item name="wcf.user.notification.com.woltlab.blog.likeableEntry.notification.like"><![CDATA[Reacción a tu artículo del blog]]></item>
 		<item name="wcf.user.notification.com.woltlab.blog.entryComment.like.notification.like"><![CDATA[Reacción a tu comentario]]></item>
 		<item name="wcf.user.notification.com.woltlab.blog.entryComment.response.like.notification.like"><![CDATA[Reacción a tu respuesta a un comentario]]></item>
